@@ -1,0 +1,31 @@
+footer{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: #EDEFEE;
+    width: 100vw;
+}
+.footerText{
+    color: #495E57;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 3rem;
+}
+footer ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+footer li{
+    font-size: 10px;
+    margin: 0;
+    color: #333333;
+}
+
+footer img {
+    max-width: 100px;
+    height: 172px;
+    border: 2px solid black;
+    margin-right: 3rem;
+}
