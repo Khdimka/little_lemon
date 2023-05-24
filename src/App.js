@@ -1,6 +1,6 @@
 import Nav from "./components/Nav";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import HeroSection from "./components/HeroSection";
+import Highlights from "./components/Highlights";
 import Footer from "./components/Footer";
 import "./App.css"
 
@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="container">
       <Nav/>
-      <Header/>
-      <Main/>
+      <HeroSection/>
+      <Highlights/>
       <Footer/>
     </div>
   );

@@ -1,0 +1,89 @@
+@import "Colors.css";
+
+main{
+    margin-bottom: 1rem;
+}
+main .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .title h4{
+    font-size: 2rem;
+    font-family: 'Karla', sans-serif;
+}
+main .title button{
+    border-radius: 4px;
+    background-color: black;
+    color: var(--white);
+    border: none;
+    padding:  14px 32px;
+    height: fit-content;
+}
+main .title button:hover,button:focus{
+    background-color: #181818da;
+    cursor: pointer;
+}
+main .Content{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+main .Content .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 20rem;
+}
+main .Content .card img{
+    width: 100%;
+    height: 14rem;
+    border-radius: 8px 8px 0 0;    
+}
+main .card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+    padding: 1.5rem;
+    background-color: var(--white);
+    min-height: 12rem;
+    font-family: 'Karla', serif;
+}
+main .card h6{
+    margin-top: 0;
+}
+main .card .content .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+main .card .content .price h6{
+    margin: 0;
+    font-size: 1rem;
+}
+main .card .content .price h4{
+    
+    margin: 0;
+    color: var(--orange);
+}
+main .card .content p{
+    color: var(--Green);
+    font-family: 'Markazi Text', sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    line-height: 18px;
+}
+main .card .content a:hover{
+    cursor: pointer;
+}
+main .card .content a{
+    display: flex;
+    align-items: center;
+}
+main .card .content a img{
+    margin: 0 0 0 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}

@@ -1,15 +1,18 @@
-footer{
+footer .container{
     padding: 2rem 0;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     background-color: #EDEFEE;
     width: 100vw;
 }
 .footerText{
+    font-size: 1.5rem;
     color: #495E57;
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 3rem;
+    margin-left: 4rem;
 }
 footer ul{
     padding: 0;
@@ -18,14 +21,14 @@ footer ul{
     align-content: flex-start;
 }
 footer li{
-    font-size: 10px;
+    font-size: 1rem;
     margin: 0;
     color: #333333;
 }
 
 footer img {
-    max-width: 100px;
-    height: 172px;
+    max-width: 10rem;
+    height: 15rem;
     border: 2px solid black;
     margin-right: 3rem;
 }
