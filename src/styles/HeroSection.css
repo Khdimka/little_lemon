@@ -6,7 +6,7 @@ header{
     grid-template-columns: auto auto;
     justify-content: space-evenly;
     gap: 4.5rem;
-    background-image: linear-gradient(to bottom, var(--Green) 80%, transparent 20%);
+    background-image: linear-gradient(to bottom, var(--green) 80%, transparent 20%);
     background-clip: content-box;
     background-size: 100% 101%;
     width: 100vw;
@@ -21,7 +21,7 @@ header h4{
     font-size: 3.5rem;
     font-weight: 300;
     margin: 1rem 6rem 0 0;
-    color: var(--Yellow);
+    color: var(--yellow);
 }
 header h5{
     font-family: 'Karla', sans-serif;
@@ -41,7 +41,7 @@ header h6{
 }
 header button{
     border-radius: 4px;
-    background-color: var(--Yellow);
+    background-color: var(--yellow);
     font-size: 10px;
     font-weight: 600;
     color: var(--light-black);

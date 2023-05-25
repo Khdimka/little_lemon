@@ -1,0 +1,45 @@
+@import "Colors.css";
+
+.Testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100vw;
+}
+.Testimonials .content{
+    display: flex;
+    gap: 2rem;
+}
+.Testimonials .content .card{
+    padding: 1rem;
+    width: 8rem;
+    background-color: white;
+    
+}
+.Testimonials .content .card .rating{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.Testimonials .content .card .rating h6{
+    display: inline;
+    margin: 0;
+}
+.Testimonials .content .card .rating img{
+    width: 1rem;
+}
+.Testimonials .content .card .credentials{
+    display: flex;
+    justify-content: flex-start;
+}
+.Testimonials .content .card .credentials img{
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.Testimonials .content .card p{
+    font-size: 0.6rem;
+}

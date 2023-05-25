@@ -1,0 +1,59 @@
+@import "Colors.css";
+
+
+.about{
+    font-family: "Karla" , sans-serif;
+    display: flex;
+    justify-content: space-between;
+    height: 25rem;
+    padding: 5rem 0 3rem;
+    color: var(--green);
+}
+.about .text h4{
+    font-size: 3rem;
+    margin: 0;
+    color: var(--yellow);
+}
+.about .text h5{
+    font-size: 1.8rem;
+    margin: 0;
+}
+.about .text h6{
+    margin: 2rem 0;
+    max-width: 20rem;
+    line-height: 1rem;
+}
+.about .images img{
+    width: 16rem;
+    height: 19rem;
+}
+
+.images {
+    position: relative;
+  }
+  
+  .images img {
+    position: relative;
+    transition: transform 1s ease;
+  }
+  
+
+  
+  .images .move:last-child {
+    transform: translate(25%,-10%);
+    
+  }
+  .images .move:first-child {
+    transform: translate(-40%,20%);
+    
+  }
+
+  
+  .images img:first-child {
+    left: 30%;
+    z-index: -1;
+    }
+  
+  .images img:last-child {
+    right: 20%;
+  }
