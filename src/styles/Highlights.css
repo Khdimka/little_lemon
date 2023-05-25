@@ -59,17 +59,17 @@ main .card .content .price{
     align-items: center;
     text-align: center;
 }
-main .card .content .price h6{
+main .card .content .price .name{
     margin: 0;
     font-size: 1rem;
 }
-main .card .content .price h4{
+main .card .content .price .price{
     
     margin: 0;
     color: var(--orange);
 }
 main .card .content p{
-    color: var(--Green);
+    color: var(--green);
     font-family: 'Markazi Text', sans-serif;
     font-size: larger;
     font-weight: 500;
@@ -87,3 +87,18 @@ main .card .content a img{
     width: 1.5rem;
     height: 1.5rem;
 }
+
+
+main .Content .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    cursor: pointer;
+  }
+  
+  main .Content .card:hover .content {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  main .Content .card {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
