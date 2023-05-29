@@ -64,7 +64,12 @@ function BookingForm({availableTimes,dispatch,submitForm}) {
               <label htmlFor="outdoor">Outdoor seat</label>
               <input onChange={handleInputChange} type="radio" name="seatLocation" id="outdoor" value='outdoor' checked={formData.seatLocation === "outdoor"} required />
             </div>
+            <div>
+              <label htmlFor="date">Date</label>
               <input type="date" id="date" name="date" value={formData.date} onChange={handleDateChange} required />            
+            </div>
+            <div>
+              <label htmlFor="diners">Number of Diners</label>
             <select value={formData.diners} required onChange={handleInputChange} name="diners" id="diners">
               <option value="" className="placeholder" disabled>Number of diners</option>
               <option value="1">1 Diner</option>
@@ -78,12 +83,18 @@ function BookingForm({availableTimes,dispatch,submitForm}) {
               <option value="9">9 Diners</option>
               <option value="10">10 Diners</option>
             </select>
+            </div>
+            <div>
+              <label htmlFor="occasion">Occasion</label>
               <select onChange={handleInputChange} name="occasion" id="occasion" required value={formData.occasion}>
                 <option value="" className="placeholder" disabled>Occasion</option>
                 <option value="Birthday">Birthday</option>
                 <option value="Anniversary">Anniversary</option>
                 <option value="Engagement">Engagement</option>
               </select>
+            </div>
+            <div>
+              <label htmlFor="time">Time</label>
               <select value={formData.time} onChange={handleInputChange} name="time" id="time">
                 <option value="" className="placeholder" disabled>Time</option>
                 {
@@ -94,6 +105,7 @@ function BookingForm({availableTimes,dispatch,submitForm}) {
                   })
                 }
               </select>
+            </div>
           </div>
           <input value="Reserve a table" disabled={!formData.seatLocation || !formData.date || !formData.diners || !formData.time || !formData.occasion} type="submit"></input>
         </div> : <ReservationConfirmation formData={formData} setStep={setStep} handleInputChange={handleInputChange} />}

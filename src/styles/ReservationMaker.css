@@ -8,10 +8,11 @@ form{
     width: 100%;
 }
 form .grid{
+    text-align: left;
     color: var(--white);
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto 40px 40px;
+    grid-template-rows: auto 70px 70px;
     justify-content: center;
     gap: 2rem;
     font-family: 'Markazi', sans-serif;
@@ -32,7 +33,13 @@ form .content h2{
 }
 form .grid input[type="date"],form .grid div select{
     display: block;
+    height: 2rem;
+    width: 12rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
 }
+
 form .radio{
     font-size: 1.5rem;
     display: flex; 
@@ -76,10 +83,6 @@ form input[type="radio"]:checked::before {
 form select {
     border-radius: 5px;
 }
-form select option{
-    outline: 1px solid red;
-}
-
 
 form input[type="submit"]{
     padding: 1rem;
