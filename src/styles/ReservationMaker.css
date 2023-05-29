@@ -1,0 +1,105 @@
+@import "./Colors.css";
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem 2rem;
+    width: 100%;
+}
+form .grid{
+    color: var(--white);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 40px 40px;
+    justify-content: center;
+    gap: 2rem;
+    font-family: 'Markazi', sans-serif;
+}
+form .content{
+    padding: 2rem 0;
+    background-color: var(--green);
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+form .content h2{
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    color: var(--yellow);
+    font-size: 4rem;
+}
+form .grid input[type="date"],form .grid div select{
+    display: block;
+}
+form .radio{
+    font-size: 1.5rem;
+    display: flex; 
+}
+form input[type='radio']{
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: var(--white);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid var(--white);
+  border-radius: 50%;
+  transform: translateY(0.075em);
+  margin-left: 1rem;
+display: grid;
+place-content: center;
+}
+form  input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--yellow);
+    background-color: CanvasText;
+}
+  
+form input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+form select {
+    border-radius: 5px;
+}
+form select option{
+    outline: 1px solid red;
+}
+
+
+form input[type="submit"]{
+    padding: 1rem;
+    border-radius: 0.2rem;
+    background-color: var(--yellow);
+    font-size: larger;
+    font-weight: 600;
+    border: none;
+    margin:2rem 4rem;
+}
+form input[type="submit"]:not([disabled]):hover{
+    background-color: #f4cf14d8;
+    cursor: pointer;
+}
+form select .placeholder {
+    display: none;
+  }
+
+form input[type="date"]::-webkit-input-placeholder {
+    color: gray;
+    font-style: italic;
+  }
+

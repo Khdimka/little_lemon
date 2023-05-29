@@ -1,0 +1,58 @@
+@import 'Colors.css';
+
+.content .credentials{
+    display: grid;
+    grid-template-columns: 12rem 12rem auto;
+    column-gap: 2rem;
+    row-gap: 3rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-align: left;
+
+}
+.content{
+    color: white;
+}
+
+.content .credentials .textarea{
+    display: flex;
+    flex-direction: column;
+    grid-row: span 2;
+}
+.content .credentials textarea{
+    height: 8rem;
+    margin-top: 0.55rem;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+.content .credentials input[type='text'],input[type='tel'],input[type='email']{
+    margin-top: 0.55rem;
+    height: 2rem;
+    width: 12rem;
+    border-radius: 5px;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+.content .credentials input:focus:invalid{
+    border: 1px solid red;
+}
+.content button[name='goBack']{
+    padding: 1rem;
+    border-radius: 0.2rem;
+    background-color:azure;
+    font-size: larger;
+    font-weight: 600;
+    border: none;
+    margin:2rem 4rem;
+}
+.content button[name='goBack']:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.content .fa-arrow-left{
+    margin-right: 0.2rem;
+}
+

@@ -51,9 +51,10 @@
   
   .images img:first-child {
     left: 30%;
-    z-index: -1;
     }
   
   .images img:last-child {
     right: 20%;
+    z-index: -1;
+
   }

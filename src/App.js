@@ -1,22 +1,23 @@
 import Nav from "./components/Nav";
-import HeroSection from "./components/HeroSection";
-import Highlights from "./components/Highlights";
-import Testimonials from "./components/Testimonials";
-import About from "./components/About";
-import Footer from "./components/Footer";
+import Homepage from "./components/Homepage";
 import "./App.css"
-
+import { useState } from "react";
+import { Route,Routes } from "react-router-dom";
+import BookingPage from "./components/BookingPage";
+import ConfirmedBooking from "./components/ConfirmedBooking";
 
 
 function App() {
+
+
   return (
     <div className="container">
       <Nav/>
-      <HeroSection/>
-      <Highlights/>
-      <Testimonials/>
-      <About/>
-      <Footer/>
+      <Routes>
+        <Route path="/homepage" element={<Homepage/>}/>
+        <Route path="/Reservation" element={<BookingPage/>}/>
+        <Route path="/confirmed" element={<ConfirmedBooking />}></Route>
+      </Routes>
     </div>
   );
 }

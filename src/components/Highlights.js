@@ -4,14 +4,14 @@ function Highlights(){
     return(
         <main>
             <div className="title">
-                <h4>Specials</h4>
+                <h4>This weeks specials</h4>
                 <button>Online Menu</button>
             </div>
             <div className="Content">
                 <div className="card">
                     <img src={require("../Assets/greek salad.jpg")}></img>
                     <div className="content">
-                        <div className="price">
+                        <div className="info">
                         <h6 className="name">Greek salad</h6>
                         <h4 className="price">$12.99</h4>
                         </div>
@@ -22,7 +22,7 @@ function Highlights(){
                 <div className="card">
                     <img src={require("../Assets/bruchetta.png")}></img>
                     <div className="content">
-                        <div className="price">
+                        <div className="info">
                         <h6 className="name">Bruchetta</h6>
                         <h4 className="price">$5.99</h4>
                         </div>
@@ -33,7 +33,7 @@ function Highlights(){
                 <div className="card">
                     <img src={require("../Assets/lemon dessert.jpg")}></img>
                     <div className="content">
-                        <div className="price">
+                        <div className="info">
                         <h6 className="name">Lemon Dessert</h6>
                         <h4 className="price">$5.00</h4>
                         </div>
